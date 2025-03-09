@@ -2,9 +2,9 @@
 
 int main() {
 
-    int habitantes = 9059; 1414;
     char codigo[15] = "A01', 'A02";
     char Estado[40] = "Pernambuco, Bahia";
+    int habitantes = 9059; 1414;
     float territorio = 98312; 567295;
     float pib = 2549; 349;
     int pontos = 7; 10;
