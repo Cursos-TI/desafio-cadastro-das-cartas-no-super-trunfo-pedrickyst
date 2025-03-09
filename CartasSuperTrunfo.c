@@ -24,8 +24,8 @@ int main() {
     printf("Cod A02 = Bahia.\n");
     printf("\n");
 
-    printf("Escolha sua carta:\n");
-    scanf("%d", 1, 2);
+    printf("Escolha sua carta: \n");
+    scanf  ("%s", "A01, A02" );
     printf("\n");
 
     printf("A carta A01 \n");
