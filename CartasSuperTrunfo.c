@@ -25,10 +25,10 @@ int main() {
     printf("\n");
 
     printf("Escolha sua carta:\n");
-    scanf("%s", "A01, A02");
+    scanf("%d", 1, 2);
     printf("\n");
 
-    printf("A carta 1 \n");
+    printf("A carta A01 \n");
     printf("Estado:  %s\n", "Pernambuco");
     printf("O codigo: %s\n", "A01");
     printf("Cidade: %s\n", "Recife");
@@ -38,7 +38,7 @@ int main() {
     printf("Pontos Turisticos: %d\n", 7);
     printf("\n");
 
-    printf("A carta 2 \n");
+    printf("A carta A02 \n");
     printf("Estado:  %s\n", "Bahia");
     printf("O codigo: %s\n", "A02");
     printf("Cidade: %s\n", "Salvador");
