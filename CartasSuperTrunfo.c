@@ -25,7 +25,7 @@ int main() {
     printf("\n");
 
     printf("Escolha sua carta:\n");
-    scanf("%s", "A01, A02");
+    scanf("%d", 1, 2);
     printf("\n");
 
     printf("A carta A01 \n");
