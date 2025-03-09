@@ -8,8 +8,8 @@ int main() {
     float territorio = 98312; 567295;
     float pib = 2549; 349;
     int pontos = 7; 10;
-    char Cidade = "Recife, Salvador";
-
+    char cidade = "Recife, Salvador";
+    
     printf("Seja Bem Vindo, Jogador!");
     printf("\n");
     printf("Eu sou, O Super Trunfo! \n");
