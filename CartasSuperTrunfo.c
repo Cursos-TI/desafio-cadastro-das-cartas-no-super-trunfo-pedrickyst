@@ -9,7 +9,7 @@ int main() {
     float pib = 2549; 349;
     int pontos = 7; 10;
     char cidade = "Recife, Salvador";
-    
+
     printf("Seja Bem Vindo, Jogador!");
     printf("\n");
     printf("Eu sou, O Super Trunfo! \n");
@@ -48,8 +48,8 @@ int main() {
     printf("Pontos Turisticos: %d\n", 10);
     printf("\n");
 
+
+
     return 0;
-
-
 
 }
