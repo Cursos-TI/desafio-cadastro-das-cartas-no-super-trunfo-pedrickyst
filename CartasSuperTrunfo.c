@@ -1,22 +1,55 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
+    char codigo[15] = "A01', 'A02";
+    char Estado[40] = "Pernambuco, Bahia";
+    char Cidade = "Recife, Salvador";
+    int habitantes = 9059; 1414;
+    float territorio = 98312; 567295;
+    float pib = 2549; 349;
+    int pontos = 7; 10;
+
+    printf("Seja Bem Vindo, Jogador!");
+    printf("\n");
+    printf("Eu sou, O Super Trunfo! \n");
+    printf("\n");
+    printf("Se você esta atrás de um jogo que teste todas as suas abilidades? \n");
+    printf("convido você a parar de procurar, pois este jogo ira explorar todo o seu desempenho como gamer. \n");
+    printf("Isto é, em todas as áreas; seja no seu psicológico ou resistência, \n");
+    printf("este jogo irá lhe impulsionar a uma nova era dos gamers. \n");
+    printf("\n");
+    printf("O Super Trunfo é um jogo de cartas. \n");
+    printf("Cod A01 = Pernambuco \n");
+    printf("Cod A02 = Bahia.\n");
+    printf("\n");
+
+    printf("Escolha sua carta:\n");
+    scanf("%s", "A01, A02");
+    printf("\n");
+
+    printf("A carta 1 \n");
+    printf("Estado:  %s\n", "Pernambuco");
+    printf("O codigo: %s\n", "A01");
+    printf("Cidade: %s\n", "Recife");
+    printf("População: %d\n", 9059);
+    printf("Área: %d\n", 98312);
+    printf("PIB: %d\n", 2549);
+    printf("Pontos Turisticos: %d\n", 7);
+    printf("\n");
+
+    printf("A carta 2 \n");
+    printf("Estado:  %s\n", "Bahia");
+    printf("O codigo: %s\n", "A02");
+    printf("Cidade: %s\n", "Salvador");
+    printf("População: %d\n", 1414);
+    printf("Área: %d\n", 567295);
+    printf("PIB: %d\n", 349);
+    printf("Pontos Turisticos: %d\n", 10);
+    printf("\n");
 
     return 0;
+
+
+
 }
