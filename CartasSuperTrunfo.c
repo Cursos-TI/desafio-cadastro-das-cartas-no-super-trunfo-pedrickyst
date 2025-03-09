@@ -8,7 +8,7 @@ int main() {
     float territorio = 98312; 567295;
     float pib = 2549; 349;
     int pontos = 7; 10;
-    char cidade = "Recife, Salvador";
+    char cidade[50] = "Recife, Salvador";
 
     printf("Seja Bem Vindo, Jogador!");
     printf("\n");
@@ -25,7 +25,7 @@ int main() {
     printf("\n");
 
     printf("Escolha sua carta:\n");
-    scanf("%d", 1, 2);
+    scanf("%d", "A01, A02");
     printf("\n");
 
     printf("A carta A01 \n");
