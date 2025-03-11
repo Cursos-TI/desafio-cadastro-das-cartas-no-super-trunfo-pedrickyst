@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 int main() {
+    printf("Desafio Super Trunfo \n");
+    printf("\n");
 
     char codigo[15] = "A01', 'A02";
     char Estado[40] = "Pernambuco, Bahia";
@@ -10,16 +12,10 @@ int main() {
     int pontos = 7; 10;
     char cidade[50] = "Recife, Salvador";
 
-    printf("Seja Bem Vindo, Jogador!");
+    printf("Seja Bem Vindo, Jogador! \n");
+    printf("Ao SuperTunfo. \n");
     printf("\n");
-    printf("Eu sou, O Super Trunfo! \n");
-    printf("\n");
-    printf("Se você esta atrás de um jogo que teste todas as suas abilidades? \n");
-    printf("convido você a parar de procurar, pois este jogo ira explorar todo o seu desempenho como gamer. \n");
-    printf("Isto é, em todas as áreas; seja no seu psicológico ou resistência, \n");
-    printf("este jogo irá lhe impulsionar a uma nova era dos gamers. \n");
-    printf("\n");
-    printf("O Super Trunfo é um jogo de cartas. \n");
+    printf("O Super Trunfo é um jogo ondem você pode batalhar usando cartas. \n");
     printf("Cod A01 = Pernambuco \n");
     printf("Cod A02 = Bahia.\n");
     printf("\n");
