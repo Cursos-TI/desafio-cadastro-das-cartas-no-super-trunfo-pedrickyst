@@ -12,15 +12,16 @@ int main(){
     float territorio = 98.312; 567.295;
     float PIB = 254.9; 349.114;
     int pontos = 7; 10;
-    //Informações que serão usadas para a realização da programação.
+    //int, char e float aqui estarão as informações para realizar à programação.
 
-    printf("O jogo consiste em escolher uma carta para batalhar. \n");
+    printf("O jogo consiste em escolher uma carta representando o Estado. \n");
+    printf("Ex; A01 - Pernambuco ou A02 - Bahia. \n");
     //printf esta mostrando a funcionabilidade do jogo.
 
     printf("Escolha sua carta: \n");
     scanf("%d", 1, 2);
     printf("\n");
-    //scanf("%i") esta relacionada a escolha da carta feita pelo player. 
+    //scanf("%d") esta relacionada ao comando de escolha da carta, execussão feita pelo player. 
 
     printf("A carta: %d\n", 1);
     printf("Estado: %s\n", "Pernambuco");
