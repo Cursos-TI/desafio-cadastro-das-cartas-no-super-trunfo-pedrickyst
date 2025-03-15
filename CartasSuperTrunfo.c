@@ -6,11 +6,13 @@ int main() {
     printf("*** Super Trunfo *** \n");
     printf("\n");
 
+    //Apresentação do Jogo.
     printf("Este jogo consiste em desafiar seus amigos, ultilizando cartas. \n");
     printf("Neste jogo iremos usar inrformações reais de cada estado do Brasil. \n");
-    printf("Ex; Csrta A01 = Pernambuco, Carta B01 = Bahia! \n");
+    printf("Ex; Carta A01 = Pernambuco, Carta B01 = Bahia! \n");
+    printf("\n");
     
-    
+    //Códigos usados como base para a funcionabilidade do softwer.
     char estado1 = 'A';
     char estado2 = 'B';
     char codigo1[10] = "A01";
@@ -25,9 +27,8 @@ int main() {
     float PIB2 = 115.9;
     int pontos1 = 7;
     int pontos2 = 10;
-    float densidade1;
-    float densidade2;
-
+    
+    //Comandos para calcular as densidades e o percapita.
     int soma, subtracao, multiplicacao, divisao;
 
     int resultado;    
