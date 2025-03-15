@@ -1,53 +1,61 @@
 #include <stdio.h>
  
-int main(){
+int main() {
 
-    printf("Super Trunfo \n");
-    //printf está identificando o (Titulo ou nome do jogo que está sendo rodado).
-
-    int carta = 1; 2;
-    char estado[25] = "Pernambuco; Bahia";
-    char cidade[20] = "Recife; Salvador";
-    int habitantes =  9.059; 14.14;
-    float territorio = 98.312; 567.295;
-    float PIB = 254.9; 349.114;
-    int pontos = 7; 10;
-    //int, char e float aqui estarão as informações para realizar à programação.
-
-    printf("O jogo consiste em escolher uma carta representando o Estado. \n");
-    printf("Ex; A01 - Pernambuco ou A02 - Bahia. \n");
-    //printf esta mostrando a funcionabilidade do jogo.
-
-    printf("Escolha sua carta: \n");
-    scanf("%d", 1, 2);
-    printf("\n");
-    //scanf("%d") esta relacionada ao comando de escolha da carta, execussão feita pelo player. 
-
-    printf("A carta: %d\n", 1);
-    printf("Estado: %s\n", "Pernambuco");
-    printf("cidade: %s\n", "Recife");
-    printf("Habitantes: %f\n", 9.059);
-    printf("Área: %f\n", 98.312);
-    printf("PIB: %f\n", 254.9);
-    printf("Pontos Turisticos: %d\n", 7);
-    //Aqui foram colocados as informações do primeiro estado "carta A01".
-
+    //Nome do jogo!
+    printf("*** Super Trunfo *** \n");
     printf("\n");
 
-    printf("A carta: %d\n", 2);
-    printf("Estado: %s\n", "Bahia");
-    printf("Cidade: %s\n", "Salvador");
-    printf("Habitantes: %f\n", 14.14);
-    printf("Área: %f\n", 567.295);
-    printf("PIB: %f\n", 349.114);
-    printf("Pontos Turisticos: %d\n", 10);
-    printf("\n");
-    //Aqui foram colocados as informações do segundo estado "carta A02".
-
-    printf("\n");
-
+    printf("Este jogo consiste em desafiar seus amigos, ultilizando cartas. \n");
+    printf("Neste jogo iremos usar inrformações reais de cada estado do Brasil. \n");
+    printf("Ex; Csrta A01 = Pernambuco, Carta B01 = Bahia! \n");
     
+    
+    char estado1 = 'A';
+    char estado2 = 'B';
+    char codigo1[10] = "A01";
+    char codigo2[10] = "B01";
+    char cidade1[20] = "Recife";
+    char cidade2[20] = "Salvador";
+    int populacao1 = 9.059;
+    int populacao2 = 14.14;
+    float area1 = 98.312;
+    float area2 = 567.295;
+    float PIB1 = 197.8;
+    float PIB2 = 115.9;
+    int pontos1 = 7;
+    int pontos2 = 10;
+    float densidade1;
+    float densidade2;
+
+    int soma, subtracao, multiplicacao, divisao;
+
+    int resultado;    
+
+    printf("O estado é: %c\n", estado1);
+    printf("O Código é: %s\n", codigo1);
+    printf("A Cidade é: %s\n", cidade1);
+    printf("População: %d\n", populacao1);
+    printf("A Área é: %f\n", area1);
+    printf("O P.I.B é: %f\n", PIB1);
+    printf("Pontos Turisticos: %d\n", pontos1);
+    printf("A Densidade Populacional é: %f\n", area1/populacao1);
+    printf("O P.I.B Percapita é: %f\n", PIB1/populacao1);
+    
+    printf("\n");
+
+    printf("O estado é: %c\n", estado2);
+    printf("O Código é: %s\n", codigo2);
+    printf("A Cidade é: %s\n", cidade2);
+    printf("População: %d\n", populacao2);
+    printf("A Área é: %f\n", area2);
+    printf("O P.I.B é: %f\n", PIB2);
+    printf("Pontos Turisticos: %d\n", pontos2);
+    printf("A Densidade Populacional é: %f\n", area2/populacao2);
+    printf("O P.I.B Percapita é: %f\n", PIB2/populacao2);
+
+    printf("\n");
+
     return 0;
-
-
+    
 }
