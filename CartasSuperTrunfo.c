@@ -13,8 +13,8 @@ int main() {
     printf("\n");
 
     //Comandos (int's), para selecionar a carta que será usada pelo player.
-    char A01 = 1;
-    char B01 = 2;
+    int A01 = 1;
+    int B01 = 2;
 
     //opção de escolha das cartas para o palyer (Jogador!).
     printf("Escolha sua carta: ");
