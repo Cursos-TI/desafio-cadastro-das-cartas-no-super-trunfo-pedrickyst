@@ -1,18 +1,69 @@
 #include <stdio.h>
- 
+#include <stdlib.h>
+#include <time.h>
 int main() {
 
-    //Nome do jogo!
+    
     printf("*** Super Trunfo *** \n");
     printf("\n");
+    //Impressão do nome do jogo!
 
-    //Apresentação do Jogo.
-    printf("Este jogo consiste em desafiar seus amigos, ultilizando cartas. \n");
-    printf("Neste jogo iremos usar inrformações reais de cada estado do Brasil. \n");
-    printf("Ex; Carta A01 = Pernambuco, Carta B01 = Bahia! \n");
+    int opcao;
+
+    printf("Menu Principal\n");
+    printf("1. Iniciar Jogo   2. Regras do Jogo    3. Sair \n");
+    printf("\n");
+    printf("Escolha uma Opção: ");
+    scanf("%d", &opcao);
+    printf("\n");
+    //nas linhas de 10-16 foi criado o menu do jogo.
+    
+    switch (opcao)
+    {
+    case 1:
+        printf("Iniciando Jogo... \n");
+        break;
+    case 2:
+        printf("Este jogo consiste em desafiar seus amigos, ultilizando cartas. \n");
+        printf("Neste jogo iremos usar inrformações reais de cada estado do Brasil. \n");
+        printf("Ex; \n");
+        printf("1 = Pernambuco, 2 = Bahia! \n");
+        break;
+    case 3:
+        printf("Você saiu do Jogo! \n");
+        break;    
+    
+    default:
+        printf("Código Inexistente! \n");
+        break;
+    }
+    /*nas linhas de 20-38 está os infortmações que devem ser impressos de acordo com a escolha do jogador.
+    Se ele quiser iniciar o jogo basta clicar em 1 e sera enviado para o comandse de escolha de cartas.
+    se ele quiser ver as regras do jogo ele deve apertar 2.
+    Se ele não quiser jogar aciona 3 e sairá do jogo.
+    */
+
+    int carta;
+
+    printf("\n");
+    printf("Escolha sua carta: ");
+    scanf("%d", &carta);
     printf("\n");
 
-    //Códigos usados como base para a funcionabilidade do softwer do jogo.
+    switch (carta)
+    {
+    case 1:
+       printf("PERNAMBUCO \n");
+        break;
+    case 2:
+        printf("BAHIA \n");
+         break;
+    
+    default:
+        break;
+    }
+    //nas linhas de 43-63, o jogador vai passar a escolher sua carta.
+
     char estado1;
     char estado2;
     char codigo1[10] = "A01";
@@ -33,17 +84,14 @@ int main() {
     unsigned int densidadeP2 = 81966057;
     unsigned int poder1 = 2086827;
     unsigned int poder2 = 824605;
+    //Nas linhas 66-85 esta as informações de cada carta.
     
-    //Comandos para calcular as densidades e o percapita.
-    int soma, subtracao, multiplicacao, divisao;
-    
-    int resultado;
+    int soma, subtracao, multiplicacao, divisao, resultado;
+    //Comando usado para calculos.
 
     printf("\n");
 
-    //comparação das informações das cartas.
     printf("Comparação das cartas: \n");
-    printf("\n");
     printf("venceu: %u\n", populacao1 >= populacao2);
     printf("venceu: %d\n", area1 >= area2);
     printf("venceu: %d\n", PIB1 >= PIB2);
@@ -52,59 +100,22 @@ int main() {
     printf("venceu: %d\n", densidadeP1 >= densidadeP2);
     printf("venceu: %d\n", poder1 >= poder2);
 
+    //Aqui o programa ira executar os calculos para entregar o resultado de comparação das cartas.
+
     printf("\n");
-    printf("Resultado dos atributos! \n");
+    printf("Carta vencedora! \n");
     printf("\n");
-
-    //todos os resultados que o programa gerará.
-    if(populacao1 > populacao2){
-        printf("População: Pernambuco Venceu! \n");
+    //A informação da carta vencedora.
+   
+    if(densidadeP1 > densidadeP2){
+        printf("PERNAMBUCO \n");
     }else {
-        printf("População: Bahia venceu! \n");
+    printf("BAHIA \n");
     }
-
-    if(area1 > area2){
-        printf("Área: Pernambuco Venceu! \n");
-    }else {
-    printf("Área: Bahia venceu!\n");
-    }
-
-    if(PIB1 < PIB2){
-        printf("P.I.B: Pernambuco Venceu! \n");
-    }else {
-    printf("P.I.B: Bahia venceu! \n");
-    }
-
-    if(pontos1 > pontos2){
-        printf("Pontos Turisticos: Pernambuco Venceu! \n");
-    }else {
-        printf("Pontos Turisticos: Bahia venceu! \n");
-    }
-
-    if(densidade1 > densidade2){
-        printf("Densidade Populacional: Pernambuco Venceu! \n");
-    }else {
-    printf("Densidade Populacional: Bahia venceu!\n");
-    }
-
-    if(densidadeP1 < densidadeP2){
-        printf("Densidade Percapita: Pernambuco Venceu! \n");
-    }else {
-    printf("Densidade Percapita: Bahia venceu! \n");
-    }
-
-    if(poder1 < poder2){
-        printf("Especial: Pernambuco Venceu! \n");
-    }else {
-    printf("Especial: Bahia venceu! \n");
-    }
-
-    //mensagem de agradecimento.
-    printf("Muito Obrigado! Seu jogo foi sensacional. \n");
+    //Aqui é onde será feita a comparação do poder que tornará a carta vencedora.
 
     printf("\n");
 
     return 0;
-    
     
 }
