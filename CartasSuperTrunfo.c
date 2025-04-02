@@ -3,22 +3,23 @@
 #include <time.h>
 int main() {
 
-    
+    //Titulo do Jogo.
     printf("*** Super Trunfo *** \n");
     printf("\n");
-    //Impressão do nome do jogo!
-
-    int opcao, player1, player2, computer;
+    
+    //informações basicas para o menu!
+    int opcao, player1, player2;
     srand(time(0));
 
+    //A apresentação do menu inicial do jogo.
     printf("Menu Principal\n");
     printf("1. Iniciar Jogo   2. Regras do Jogo    3. Sair \n");
     printf("\n");
     printf("Escolha uma Opção: ");
     scanf("%d", &opcao);
     printf("\n");
-    //nas linhas de 10-16 foi criado o menu do jogo.
     
+    //aqui esta toda a rede de decissão do player ("Linhas 23 - 143"). ex; Iniciar jogo, ver instruções do jogo ou sair.
     switch (opcao)
     {
     case 1:
@@ -69,6 +70,7 @@ int main() {
     scanf("%d", &carta);
     printf("\n");
 
+    //Lugar reservado para a escolha da carta("Estado!").
     switch (carta)
     {
     case 1:
@@ -81,13 +83,14 @@ int main() {
     default:
         break;
     }
-    //nas linhas de 43-63, o jogador vai passar a escolher sua carta.
+    
 
     player2 = rand() % 7 + 1;
 
        printf("Escolha seu poder de 1 à 7: ");
        scanf("%d", &player1);
     
+       //Lugar reservado ao usuário ("player1").
     switch (player1){
     case 1:
         printf("Player1: População - ");
@@ -116,6 +119,7 @@ int main() {
         break;
     } 
 
+    //Lugar reservado para as escolhas do sistema ("player2").
     switch (player2)
     {
     case 1:
@@ -141,12 +145,7 @@ int main() {
         break;
     }
 
-    /*nas linhas de 21-54 está os infortmações que devem ser impressos de acordo com a escolha do jogador.
-    Se ele quiser iniciar o jogo basta clicar em 1 e sera enviado para o comandse de escolha de cartas.
-    se ele quiser ver as regras do jogo ele deve apertar 2.
-    Se ele não quiser jogar aciona 3 e sairá do jogo.
-    */
-
+    //Informções("Atributos!") das cartas a serem extraidas para a batalha realizada.
     char estado1;
     char estado2;
     char codigo1[10] = "A01";
@@ -169,11 +168,13 @@ int main() {
     unsigned int poder2 = 824.605;
     //Nas linhas 66-85 esta as informações de cada carta.
     
+    //mecanismo usado para realizar os cauculos e comparações das cartas.
     int soma, subtracao, multiplicacao, divisao, resultado;
     //Comando usado para calculos.
 
     printf("\n");
 
+    //Área de comparação dos valores das cartas.
     printf("Comparação das cartas: \n");
     printf("\n");
     printf("População: %u\n", populacao1 >= populacao2);
@@ -184,9 +185,10 @@ int main() {
     printf("Densidade Percapta: %d\n", densidadeP1 >= densidadeP2);
     printf("Super Poder: %d\n", poder1 >= poder2);
 
-    //Aqui o programa ira executar os calculos para entregar o resultado de comparação das cartas.
+    
     printf("\n");
 
+    //Lugar de com
     if (player1 == player2)
     {
         printf(" ### DROWNGAMER ###\n");
@@ -203,7 +205,7 @@ int main() {
         printf("Player2: Venceu! \n");
     }
     
-    //Aqui é onde será feita a comparação do poder que tornará a carta vencedora.
+    //Aqui mostrará quem venceu a partida.
 
     printf("\n");
 
