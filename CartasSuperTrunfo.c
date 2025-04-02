@@ -112,6 +112,7 @@ int main() {
         break;
     default:
         printf("Código Inexistente! \n");
+        return 0;
         break;
     } 
 
