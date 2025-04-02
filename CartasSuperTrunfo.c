@@ -83,7 +83,7 @@ int main() {
     }
     //nas linhas de 43-63, o jogador vai passar a escolher sua carta.
 
-    player2 = rand() % 6 + 1;
+    player2 = rand() % 7 + 1;
 
        printf("Escolha seu poder de 1 à 7: ");
        scanf("%d", &player1);
