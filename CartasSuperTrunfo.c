@@ -57,11 +57,6 @@ int main() {
         break;
     }
     
-    /*nas linhas de 20-38 está os infortmações que devem ser impressos de acordo com a escolha do jogador.
-    Se ele quiser iniciar o jogo basta clicar em 1 e sera enviado para o comandse de escolha de cartas.
-    se ele quiser ver as regras do jogo ele deve apertar 2.
-    Se ele não quiser jogar aciona 3 e sairá do jogo.
-    */
     
     int carta;
 
